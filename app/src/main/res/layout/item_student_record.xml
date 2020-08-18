@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/isr_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/isr_text_roll_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Roll No"/>
+
+    <TextView
+        android:id="@+id/isr_text_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/isr_text_roll_no"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Class"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/isr_text_marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isr_text_roll_no"
+        android:text="Marks"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isr_text_class"
+        android:layout_marginTop="10dp"
+        android:text="@string/update"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/btn_update"
+        app:layout_constraintTop_toBottomOf="@+id/isr_text_class"
+        android:layout_marginTop="10dp"
+        android:text="delete"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
